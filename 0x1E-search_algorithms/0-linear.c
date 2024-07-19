@@ -1,4 +1,6 @@
-#include 'search_algos.h'
+#include <stdio.h>
+#include <stdlib.h>
+#include "search_algos.h"
 /**
  * linear search function is stored here
  * @array: a pointer to 1st element in array
