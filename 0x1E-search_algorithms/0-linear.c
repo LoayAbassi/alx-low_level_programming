@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "search_algos.h"
+
 /**
  * linear search function is stored here
  * @array: a pointer to 1st element in array
@@ -9,19 +10,20 @@
  *
  * Return: if value not present -1,
  *         else index of value in array
+ * 
+ * Description: prints values until array
+ *              ends or value found
  */
+
 int linear_search(int *array, size_t size, int value)
 {
     size_t i;
-    if (array == NULL)
-    {
+    if (array == NULL){
         return (-1);
     }
-    for (i = 0; i < size; i++)
-    {
+    for (i = 0; i < size; i++){
         printf("Value checked array[%ld] = [%d]\n", i, array[i]);
-        if (array[i] == value)
-        {
+        if (array[i] == value){
             return (i);
         }
     }
